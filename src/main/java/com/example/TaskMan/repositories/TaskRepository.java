@@ -1,4 +1,4 @@
-package com.example.TaskMan.Repositories;
+package com.example.TaskMan.repositories;
 
 
 import com.example.TaskMan.models.TaskModel;

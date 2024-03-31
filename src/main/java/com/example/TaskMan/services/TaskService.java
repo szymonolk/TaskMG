@@ -1,12 +1,10 @@
 package com.example.TaskMan.services;
 
-import com.example.TaskMan.Repositories.TaskRepository;
+import com.example.TaskMan.repositories.TaskRepository;
 import com.example.TaskMan.models.TaskModel;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.function.EntityResponse;
 
 @Service
 public class TaskService {
