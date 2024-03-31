@@ -16,13 +16,15 @@ public class TaskModel {
     private String description;
     private Boolean isDone;
     private Date lastUpdate = null;
+    private Boolean isActive = true;
 
-    public TaskModel(UUID id, String title, String description, Boolean isDone, Date lastUpdate) {
+    public TaskModel(UUID id, String title, String description, Boolean isDone, Date lastUpdate, Boolean isActive) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.isDone = isDone;
         this.lastUpdate = lastUpdate;
+        this.isActive = isActive;
     }
 
     public TaskModel() {
@@ -62,5 +64,13 @@ public class TaskModel {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
+    }
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
     }
 }
